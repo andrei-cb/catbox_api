@@ -37,8 +37,6 @@ catbox-api
     A Python wrapper for the Catbox.moe API.
 
 
-A longer description of your project goes here...
-
 
 .. _pyscaffold-notes:
 
