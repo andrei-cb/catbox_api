@@ -5,15 +5,15 @@ API_KEY = "YOUR_API_KEY_HERE"
 api = catboxAPI(API_KEY)
 
 print("TEST 1: upload_from_url")
-file_id_1 = api.upload_from_url("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+file_id_1 = api.upload_from_url("https://i.imgur.com/jIOInlc.png")
 print(f"Uploaded file id: {file_id_1}\n")
 
 print("TEST 2: upload_from_path")
-file_id_2 = api.upload_from_path("./talesofarise.jpg")
+file_id_2 = api.upload_from_path("./test_img1.jpg")
 print(f"Uploaded file id: {file_id_2}\n")
 
 print("TEST 3: upload_file")
-file_id_3 = api.upload_file("talesofarise2.jpg", open("./talesofarise2.jpg", "rb"))
+file_id_3 = api.upload_file("test_img2.jpg", open("./test_img2.jpg", "rb"))
 print(f"Uploaded file id: {file_id_3}\n")
 
 print(f"TEST 4: delete_file {file_id_3}")
@@ -25,11 +25,11 @@ album_id = api.create_album("catbox_api_test_name", "catbox_api_test_description
 print(f"Created album id: {album_id}\n")
 
 print("TEST 6: upload_file_to_album #1")
-file_id_4 = api.upload_file_to_album(album_id, "talesofarise2.jpg", open("./talesofarise2.jpg", "rb"))
+file_id_4 = api.upload_file_to_album(album_id, "test_img2.jpg", open("./test_img2.jpg", "rb"))
 print(f"Uploaded file id: {file_id_4}\n")
 
 print("TEST 7: upload_file_to_album #2")
-file_id_5 = api.upload_file_to_album(album_id, "talesofarise3.jpg", open("./talesofarise3.jpg", "rb"))
+file_id_5 = api.upload_file_to_album(album_id, "test_img3.jpg", open("./test_img3.jpg", "rb"))
 print(f"Uploaded file id: {file_id_5}\n")
 
 print("TEST 8: get_album_file_ids #1")
