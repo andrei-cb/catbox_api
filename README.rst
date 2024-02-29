@@ -36,7 +36,7 @@ catbox-api
 
     A Python wrapper for the Catbox.moe API.
 
-
+    Usage example: https://github.com/andrei-cb/catbox_api/blob/master/tests/tests.py
 
 .. _pyscaffold-notes:
 
